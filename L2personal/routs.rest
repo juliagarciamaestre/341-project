@@ -1,0 +1,10 @@
+GET http://localhost:8080/contacts
+###
+GET http://localhost:8080/contacts/63fad22a9eabb16d43f5d622
+###
+GET http://localhost:8080/contacts/63fad22a9eabb16d43f5d623
+###
+
+GET http://localhost:8080/contacts/63fad22a9eabb16d43f5d624
+###
+GET https://three41-project-uf7f.onrender.com

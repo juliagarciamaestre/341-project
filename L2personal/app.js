@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 // Connect to mongo db also can do it like const { MongoClient } = require('mongodb');
 const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./database/connect');
-const professionalRoutes = require('./routes/professional');
+// const routes = require('./routes');
 const port = process.env.PORT || 8080;
 const app = express();
 
@@ -15,7 +15,7 @@ app.use((req, res, next) =>{
 }
 );
 
-app.use('/professional', professionalRoutes);
+app.use('/', require('./routes'));
 
 
 mongodb.initDb((error, mongodb) =>{

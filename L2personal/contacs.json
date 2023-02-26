@@ -1,0 +1,25 @@
+{
+    "contact":{
+        "firstName": "Julia",
+        "lastName": "Garcia",
+        "email": "juliagarciamaestre@gmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "04/26/97"
+    },
+
+    "contact2":{
+        "firstName": "Melanie",
+        "lastName": "Schwirckslis",
+        "email": "melaschw@gmail.com",
+        "favoriteColor": "Turquoise",
+        "birthday": "02/22/97"
+    },
+
+    "contact3":{
+        "firstName": "Ginny",
+        "lastName": "Kim",
+        "email": "ginnydidoca@gmail.com",
+        "favoriteColor": "Purple",
+        "birthday": "02/22/96"
+    }
+}
