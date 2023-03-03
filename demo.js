@@ -36,6 +36,8 @@ async function main(){
             bed: 5
         }
     ]);
+
+    await updateListingByName(client, "Infinite Views", {bedrooms: 7, beds:8});
     } catch (e){
         console.error(e);
     } finally{
@@ -67,4 +69,11 @@ async function listDatabases(client){
     databasesList.databases.forEach(db => {
         console.log(`- ${db.name}`);
     })
+}
+
+async function updateListingByName(client, nameOfListing, updateListing){
+    const result = await client.db('sample_airbnb').collection("listingsAndReviews").updateOne({name: nameOfListing}, {$set: updateListing});
+
+    console.log(`${result.matchedCount} document(s) matchet the query criteria`);
+    console.log(`${result.modifiedCount} document(s) was updated`);
 }

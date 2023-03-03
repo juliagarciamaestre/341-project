@@ -8,3 +8,34 @@ GET http://localhost:8080/contacts/63fad22a9eabb16d43f5d623
 GET http://localhost:8080/contacts/63fad22a9eabb16d43f5d624
 ###
 GET https://three41-project-uf7f.onrender.com
+
+###
+GET https://three41-project-uf7f.onrender.com/contacts
+
+
+###
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Catalina",
+    "lastName": "Garcia",
+    "email": "catigm@gmail.com",
+    "favoriteColor": "red",
+    "birthday": "03/26/94"
+}
+
+###
+PUT http://localhost:8080/contacts/63fad22a9eabb16d43f5d623 HTTP/1.1 
+Content-Type: application/json
+
+{
+    "firstName": "Melanie",
+    "lastName": "Schwirckslis de Hermosilla",
+    "email": "melahermosilla@gmail.com",
+    "favoriteColor" : "Turquoise",
+    "birthday": "02/22/97"
+}
+
+###
+DELETE http://localhost:8080/contacts/640142f1e1966dec0a5aed43 HTTP/1.1
